@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link as="image" href="assets/__l5e/assets-v1/cb4eaa91-93cf-4765-bc6c-a85ce4e629b9/logo-white.png" rel="preload"/><link data-precedence="default" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;display=swap" rel="stylesheet"/><title>The Lagoons | Own Your Place On The Lagoon</title><meta content="#0f1c22" name="theme-color"/><meta content="The Lagoons" property="og:site_name"/><meta content="The Lagoons — floating lagoon residences in Turks and Caicos, with one-bedroom residences, private rooftops and optional underwater studio configurations." name="description"/><meta content="The Lagoons | Own Your Place On The Lagoon" property="og:title"/><meta content="A limited collection of private floating residences in Turks &amp; Caicos — one-bedroom, rooftop and optional underwater configurations." property="og:description"/><meta content="website" property="og:type"/><meta content="/" property="og:url"/><meta content="summary_large_image" name="twitter:card"/><link href="assets/favicon.png" rel="icon" type="image/png"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/><link href="./" rel="canonical"/> <link href="assets/styles-B7_u9cYg.css" rel="stylesheet"/>
+<style>
+  .lagoons-editorial-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(1rem, 2vw, 1.5rem);
+    align-items: start;
+  }
+
+  .lagoons-editorial-item,
+  .lagoons-thumb-item {
+    min-width: 0;
+  }
+
+  .lagoons-gallery-frame {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(15, 28, 34, 0.03);
+  }
+
+  .lagoons-gallery-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .lagoons-gallery-frame--featured {
+    aspect-ratio: 16 / 11;
+  }
+
+  .lagoons-gallery-frame--supporting,
+  .lagoons-gallery-frame--thumb {
+    aspect-ratio: 4 / 3;
+  }
+
+  .lagoons-thumb-grid {
+    margin-top: clamp(1rem, 2vw, 1.75rem);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  @media (min-width: 640px) {
+    .lagoons-thumb-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 768px) {
+    .lagoons-editorial-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(1.25rem, 2vw, 1.75rem);
+    }
+
+    .lagoons-editorial-item--wide {
+      grid-column: span 2 / span 2;
+    }
+
+    .lagoons-editorial-item--narrow {
+      grid-column: span 1 / span 1;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .lagoons-editorial-grid {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: clamp(1.5rem, 2vw, 2rem);
+    }
+
+    .lagoons-editorial-item--wide {
+      grid-column: span 7 / span 7;
+    }
+
+    .lagoons-editorial-item--narrow {
+      grid-column: span 5 / span 5;
+    }
+
+    .lagoons-thumb-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: clamp(1rem, 1.8vw, 1.5rem);
+    }
+  }
+
+
+  /* Change #2 — Experience image block: equal crop + mathematical alignment */
+  .experience-even-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(1rem, 2vw, 2rem);
+    align-items: stretch;
+  }
+
+  .experience-even-card {
+    min-width: 0;
+  }
+
+  .experience-even-frame {
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: rgba(15, 28, 34, 0.03);
+  }
+
+  .experience-even-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @media (min-width: 768px) {
+    .experience-even-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>
+<style id="residence-enhancement-v3">
+  #residence .residence-primary-grid {
+    align-items: start;
+  }
+
+  #residence .residence-primary-image {
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+  }
+
+  #residence .residence-primary-image img,
+  #residence .residence-inline-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #residence .residence-details {
+    min-width: 0;
+    padding-top: 0;
+  }
+
+  #residence .residence-inline-highlights {
+    margin-top: clamp(1.5rem, 2.7vw, 2.4rem);
+    padding-top: clamp(1rem, 1.7vw, 1.35rem);
+    border-top: 1px solid var(--color-hairline, rgba(15, 28, 34, 0.16));
+  }
+
+  #residence .residence-inline-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(0.75rem, 1.25vw, 1rem);
+  }
+
+  #residence .residence-inline-card {
+    min-width: 0;
+  }
+
+  #residence .residence-inline-card--wide {
+    grid-column: 1 / -1;
+  }
+
+  #residence .residence-inline-image {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(15, 28, 34, 0.03);
+  }
+
+  #residence .residence-inline-card:not(.residence-inline-card--wide) .residence-inline-image {
+    aspect-ratio: 4 / 3;
+  }
+
+  #residence .residence-inline-card--wide .residence-inline-image {
+    aspect-ratio: 16 / 9;
+  }
+
+  #residence .residence-inline-image figcaption {
+    display: flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    padding-top: 0.6rem;
+    font-family: var(--font-body, inherit);
+    font-size: clamp(0.76rem, 0.8vw, 0.9rem);
+    line-height: 1.35;
+  }
+
+  #residence .residence-inline-index {
+    font-family: var(--font-label, inherit);
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-gold, #b88a44);
+    flex: 0 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    #residence .residence-details {
+      padding-top: 1.5rem;
+    }
+  }
+
+  @media (max-width: 639px) {
+    #residence .residence-inline-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    #residence .residence-inline-card--wide {
+      grid-column: auto;
+    }
+    #residence .residence-inline-card .residence-inline-image,
+    #residence .residence-inline-card--wide .residence-inline-image {
+      aspect-ratio: 16 / 10;
+    }
+  }
+</style><style>
+
+  /* Change #4 — Main Floor: replace plan with 5-image editorial gallery */
+  #main-floor .main-floor-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(2.5rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  #main-floor .main-floor-gallery,
+  #main-floor .main-floor-details,
+  #main-floor .main-floor-card {
+    min-width: 0;
+  }
+
+  #main-floor .main-floor-card {
+    margin: 0;
+  }
+
+  #main-floor .main-floor-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: rgba(15, 28, 34, 0.04);
+  }
+
+  #main-floor .main-floor-card--featured .main-floor-image {
+    aspect-ratio: 16 / 9;
+  }
+
+  #main-floor .main-floor-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #main-floor .main-floor-card figcaption {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    padding-top: 0.9rem;
+    font-family: var(--font-body, inherit);
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    line-height: 1.4;
+  }
+
+  #main-floor .main-floor-index {
+    font-family: var(--font-label, inherit);
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-gold, #b88a44);
+  }
+
+  #main-floor .main-floor-support-grid {
+    margin-top: clamp(1.4rem, 2.4vw, 2rem);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(1.4rem, 2.4vw, 2rem);
+  }
+
+  #main-floor .main-floor-details {
+    border-top: 1px solid var(--color-hairline, rgba(15, 28, 34, 0.16));
+    padding-top: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    #main-floor .main-floor-support-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 768px) {
+    #main-floor .main-floor-layout {
+      grid-template-columns: minmax(0, 8fr) minmax(15rem, 4fr);
+      gap: clamp(2rem, 4vw, 4.5rem);
+    }
+
+    #main-floor .main-floor-details {
+      position: sticky;
+      top: 8rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #main-floor .main-floor-layout {
+      grid-template-columns: minmax(0, 9fr) minmax(16rem, 3fr);
+    }
+  }
+</style><style id="underwater-gallery-v7">
+  #underwater .underwater-feature {
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+  }
+
+  #underwater .underwater-feature img,
+  #underwater .underwater-gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #underwater .underwater-gallery {
+    margin-top: clamp(1.25rem, 2vw, 1.75rem);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(1rem, 1.8vw, 1.5rem);
+  }
+
+  #underwater .underwater-gallery-item {
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  @media (min-width: 640px) {
+    #underwater .underwater-gallery {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1100px) {
+    #underwater .underwater-gallery {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style><style id="gallery-lightbox-v8">
+  #gallery .gallery-clickable {
+    cursor: zoom-in;
+  }
+
+  #gallery .gallery-clickable img {
+    transition: transform 650ms cubic-bezier(.2,.65,.25,1), filter 650ms ease;
+  }
+
+  #gallery .gallery-clickable:hover img {
+    transform: scale(1.025);
+    filter: saturate(1.03);
+  }
+
+  #gallery .gallery-added-grid {
+    margin-top: clamp(1rem, 2vw, 1.75rem);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(1rem, 1.8vw, 1.5rem);
+  }
+
+  #gallery .gallery-added-card {
+    min-width: 0;
+  }
+
+  #gallery .gallery-added-frame {
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: rgba(15, 28, 34, 0.035);
+  }
+
+  #gallery .gallery-added-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @media (min-width: 640px) {
+    #gallery .gallery-added-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #gallery .gallery-added-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(1rem, 3vw, 3rem);
+    background: rgba(8, 15, 18, 0.94);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 260ms ease, visibility 260ms ease;
+  }
+
+  .gallery-lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .gallery-lightbox__stage {
+    position: relative;
+    width: min(92vw, 1500px);
+    height: min(88vh, 980px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-lightbox__image {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100% - 3rem);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 30px 80px rgba(0,0,0,.32);
+  }
+
+  .gallery-lightbox__caption {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: min(86vw, 900px);
+    text-align: center;
+    color: rgba(255,255,255,.74);
+    font-size: .8rem;
+    letter-spacing: .08em;
+  }
+
+  .gallery-lightbox__close,
+  .gallery-lightbox__nav {
+    position: absolute;
+    z-index: 2;
+    border: 1px solid rgba(255,255,255,.35);
+    background: rgba(8,15,18,.34);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 220ms ease, border-color 220ms ease;
+  }
+
+  .gallery-lightbox__close:hover,
+  .gallery-lightbox__nav:hover {
+    background: rgba(255,255,255,.12);
+    border-color: rgba(255,255,255,.7);
+  }
+
+  .gallery-lightbox__close {
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.25rem;
+  }
+
+  .gallery-lightbox__nav {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.6rem;
+  }
+
+  .gallery-lightbox__nav--prev { left: 1.25rem; }
+  .gallery-lightbox__nav--next { right: 1.25rem; }
+
+  @media (max-width: 639px) {
+    .gallery-lightbox {
+      padding: 3.5rem .75rem 1rem;
+    }
+
+    .gallery-lightbox__stage {
+      width: 100%;
+      height: 82vh;
+    }
+
+    .gallery-lightbox__nav {
+      top: auto;
+      bottom: .4rem;
+      transform: none;
+    }
+
+    .gallery-lightbox__nav--prev { left: .5rem; }
+    .gallery-lightbox__nav--next { right: .5rem; }
+  }
+</style></head><body><div class="bg-background text-foreground" id="top"><header class="fixed top-0 z-50 w-full bg-linear-to-b from-black/50 to-transparent py-7 text-white"><div class="page-x flex w-full items-center justify-between"><a href="#top"><img alt="The Lagoons" class="h-11 w-auto md:h-14" src="assets/__l5e/assets-v1/cb4eaa91-93cf-4765-bc6c-a85ce4e629b9/logo-white.png"/></a><div class="flex items-center gap-10 md:gap-14"><a class="font-label-caps link-underline hidden sm:block" href="#contact">Enquire</a><button aria-label="Menu" class="font-label-caps flex items-center gap-4">Menu<span class="flex flex-col gap-[6px]"><span class="block h-px w-8 bg-current"></span><span class="block h-px w-8 bg-current"></span></span></button></div></div></header><div class="fixed inset-0 z-[60] bg-ink text-ivory transition-all duration-700 pointer-events-none opacity-0"><div class="page-x flex h-full flex-col justify-center"><button aria-label="Close menu" class="font-label-caps absolute right-6 top-9 md:right-16">Close</button><nav class="mx-auto flex w-full max-w-5xl flex-col"><a class="group flex items-baseline gap-8 border-b border-ivory/15 py-3 transition-colors duration-500 hover:border-gold md:py-5" href="#floating-lagoons"><span class="font-label-caps w-10 text-gold">01</span><span class="font-headline text-3xl transition-transform duration-700 group-hover:translate-x-3 md:text-6xl">Floating Lagoon</span></a><a class="group flex items-baseline gap-8 border-b border-ivory/15 py-3 transition-colors duration-500 hover:border-gold md:py-5" href="#experience"><span class="font-label-caps w-10 text-gold">02</span><span class="font-headline text-3xl transition-transform duration-700 group-hover:translate-x-3 md:text-6xl">Experience</span></a><a class="group flex items-baseline gap-8 border-b border-ivory/15 py-3 transition-colors duration-500 hover:border-gold md:py-5" href="#residence"><span class="font-label-caps w-10 text-gold">03</span><span class="font-headline text-3xl transition-transform duration-700 group-hover:translate-x-3 md:text-6xl">Residences</span></a><a class="group flex items-baseline gap-8 border-b border-ivory/15 py-3 transition-colors duration-500 hover:border-gold md:py-5" href="#rooftop"><span class="font-label-caps w-10 text-gold">04</span><span class="font-headline text-3xl transition-transform duration-700 group-hover:translate-x-3 md:text-6xl">Rooftop</span></a><a class="group flex items-baseline gap-8 border-b border-ivory/15 py-3 transition-colors duration-500 hover:border-gold md:py-5" href="#underwater"><span class="font-label-caps w-10 text-gold">05</span><span class="font-headline text-3xl transition-transform duration-700 group-hover:translate-x-3 md:text-6xl">Underwater</span></a><a class="group flex items-baseline gap-8 border-b border-ivory/15 py-3 transition-colors duration-500 hover:border-gold md:py-5" href="#masterplan"><span class="font-label-caps w-10 text-gold">06</span><span class="font-headline text-3xl transition-transform duration-700 group-hover:translate-x-3 md:text-6xl">Masterplan</span></a><a class="group flex items-baseline gap-8 border-b border-ivory/15 py-3 transition-colors duration-500 hover:border-gold md:py-5" href="#gallery"><span class="font-label-caps w-10 text-gold">07</span><span class="font-headline text-3xl transition-transform duration-700 group-hover:translate-x-3 md:text-6xl">Gallery</span></a><a class="group flex items-baseline gap-8 border-b border-ivory/15 py-3 transition-colors duration-500 hover:border-gold md:py-5" href="#invest"><span class="font-label-caps w-10 text-gold">08</span><span class="font-headline text-3xl transition-transform duration-700 group-hover:translate-x-3 md:text-6xl">Own / Invest</span></a><a class="group flex items-baseline gap-8 border-b border-ivory/15 py-3 transition-colors duration-500 hover:border-gold md:py-5" href="#contact"><span class="font-label-caps w-10 text-gold">09</span><span class="font-headline text-3xl transition-transform duration-700 group-hover:translate-x-3 md:text-6xl">Contact</span></a></nav></div></div><main><section class="relative flex h-[100svh] min-h-[640px] w-full items-center justify-center overflow-hidden"><video aria-label="The Lagoons floating lagoon hero video" autoplay="" class="hero-drift absolute inset-0 h-full w-full object-cover" loop="" muted="" playsinline="" poster="assets/__l5e/assets-v1/2ee0a87f-1c13-4f0d-b79c-e10cb31a9d67/hero-poster.jpg"><source src="assets/__l5e/assets-v1/18b3efcc-5be4-4718-ac77-663fcb8cf354/hero.mp4" type="video/mp4"/></video><div class="absolute inset-0 bg-ink/45"></div><div class="absolute inset-0 bg-radial-[at_50%_60%] from-ink/65 via-ink/25 to-transparent"></div><div class="absolute inset-x-0 bottom-0 h-2/3 bg-linear-to-t from-ink/80 to-transparent"></div><div class="relative z-10 mx-auto w-full max-w-6xl px-6 text-center text-white"><div class="reveal" style="transition-delay:0ms"><p class="font-label-caps mb-8 text-gold-soft">The Lagoons · Turks &amp; Caicos</p><div class="mx-auto mb-9 h-px w-24 rule-gold"></div><h1 class="font-headline text-[15vw] leading-[0.92] md:text-[9vw] lg:text-[7.4vw]">Own Your Place<br/><span class="italic">On The Lagoon</span></h1></div><div class="reveal" style="transition-delay:240ms"><p class="font-body-md mx-auto mt-10 max-w-2xl text-white/85">A limited collection of private floating residences in Turks &amp; Caicos, with one-bedroom, rooftop and optional underwater configurations.</p></div><div class="reveal" style="transition-delay:440ms"><div class="mt-12 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-10"><a class="font-label-caps link-underline" href="#floating-lagoons">Explore The Lagoons</a><span class="hidden h-4 w-px bg-white/40 sm:block"></span><a class="font-label-caps link-underline text-white/80" href="#residence">View Residences</a></div></div></div><a class="font-label-caps absolute bottom-10 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-4 text-white/75" href="#floating-lagoons">Scroll<span class="h-14 w-px animate-pulse bg-white/60"></span></a></section><section class="relative h-[62vh] w-full overflow-hidden md:h-[82vh]" id="floating-lagoons"><div class="parallax-bg absolute inset-0" style="background-image:url('assets/custom/experience-pool-aerial.jpg')"></div><div class="absolute inset-0 bg-ink/35"></div><div class="relative z-10 flex h-full items-center justify-center px-6 text-center"><div class="reveal" style="transition-delay:0ms"><p class="font-headline text-5xl italic text-white md:text-8xl">Live on the water.</p><div class="mx-auto mt-10 h-px w-32 rule-gold"></div></div></div></section><section class="page-x section-y bg-background" id="experience"><div class="mx-auto max-w-7xl"><div class="mb-16 flex flex-col gap-10 md:mb-24 md:flex-row md:items-end md:justify-between"><div class="reveal max-w-2xl" style="transition-delay:0ms"><span class="eyebrow">02 — Experience</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">More than a residence.<br/><span class="italic text-gold">Live on the lagoon.</span></h2><div class="signature mt-4 text-4xl text-gold">The Lagoons</div></div><div class="reveal max-w-md space-y-6" style="transition-delay:140ms"><p class="font-body-md text-muted-foreground">The Lagoons brings spacious one-bedroom residences together within a man-made lagoon, making water part of the everyday experience.</p><p class="font-body-md text-muted-foreground">The project material describes an immersive escape for families, couples and solo travelers, within a resort environment shaped by tropical surroundings, dining and water.</p></div></div>
+<div class="experience-even-grid">
+<div class="reveal experience-even-card" style="transition-delay:0ms">
+<figure class="img-luxe experience-even-frame">
+<img alt="Floating residence at The Lagoons" loading="lazy" src="assets/custom/experience-villa.jpg"/>
+</figure>
+</div>
+<div class="reveal experience-even-card" style="transition-delay:120ms">
+<figure class="img-luxe experience-even-frame">
+<img alt="Lagoon pool deck" loading="lazy" src="assets/custom/experience-pool-aerial.jpg"/>
+</figure>
+</div>
+<div class="reveal experience-even-card" style="transition-delay:80ms">
+<figure class="img-luxe experience-even-frame">
+<img alt="Indoor outdoor residence living" loading="lazy" src="assets/custom/experience-arrival.jpg"/>
+</figure>
+</div>
+<div class="reveal experience-even-card" style="transition-delay:180ms">
+<figure class="img-luxe experience-even-frame">
+<img alt="Aerial view of the lagoon" loading="lazy" src="assets/custom/experience-night.jpg"/>
+</figure>
+</div>
+</div>
+</div></section><section class="page-x section-y bg-sand" id="residence"><div class="mx-auto max-w-7xl"><div class="mb-16 flex flex-col gap-10 md:mb-24 md:flex-row md:items-end md:justify-between"><div class="reveal max-w-2xl" style="transition-delay:0ms"><span class="eyebrow">03 — Residences</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">One Bedroom<br/><span class="italic text-gold">+ Rooftop</span></h2></div><div class="reveal max-w-md space-y-6" style="transition-delay:140ms"><p class="font-body-md text-muted-foreground">The supplied brochure describes spacious one-bedroom + rooftop residences overlooking the man-made lagoon within The Lagoons resort complex.</p></div></div><div class="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16 residence-primary-grid"><div class="reveal md:col-span-7" style="transition-delay:0ms"><figure class="img-luxe residence-primary-image"><img alt="The Lagoons residence" loading="lazy" src="assets/__l5e/assets-v1/5d44015e-83fa-4d90-bd3c-bea777aaaeb1/residence-front.jpg"/></figure></div><div class="reveal md:col-span-5 residence-details" style="transition-delay:140ms"><dl class="grid grid-cols-1 border-t border-hairline sm:grid-cols-2"><div class="border-b border-hairline px-1 py-8"><dt class="font-label-caps text-gold">Residence</dt><dd class="font-headline mt-3 text-2xl">One Bedroom Model</dd></div><div class="border-b border-hairline px-1 py-8"><dt class="font-label-caps text-gold">Setting</dt><dd class="font-headline mt-3 text-2xl">Man-made lagoon</dd></div><div class="border-b border-hairline px-1 py-8"><dt class="font-label-caps text-gold">Rooftop</dt><dd class="font-headline mt-3 text-2xl">Optional private rooftop</dd></div><div class="border-b border-hairline px-1 py-8"><dt class="font-label-caps text-gold">Underwater</dt><dd class="font-headline mt-3 text-2xl">Optional underwater studio</dd></div></dl><p class="font-body-md mt-10 text-muted-foreground">The project material also identifies configurations with an underwater basement/studio and private rooftop in selected units.</p><div class="residence-inline-highlights">
+<div class="residence-inline-grid">
+<div class="reveal residence-inline-card" style="transition-delay:0ms">
+<figure class="img-luxe residence-inline-image">
+<img alt="Underwater model interior lounge" loading="lazy" src="assets/custom/residence-underwater-model.jpg"/>
+<figcaption><span class="residence-inline-index">01</span><span>Underwater model</span></figcaption>
+</figure>
+</div>
+<div class="reveal residence-inline-card" style="transition-delay:80ms">
+<figure class="img-luxe residence-inline-image">
+<img alt="Private rooftop terrace with plunge pool and outdoor lounge" loading="lazy" src="assets/custom/residence-rooftop-terrace-v5.jpg"/>
+<figcaption><span class="residence-inline-index">02</span><span>Rooftop</span></figcaption>
+</figure>
+</div>
+<div class="reveal residence-inline-card residence-inline-card--wide" style="transition-delay:160ms">
+<figure class="img-luxe residence-inline-image">
+<img alt="Man-made lagoon and residence aerial view" loading="lazy" src="assets/custom/residence-manmade-lagoon.jpg"/>
+<figcaption><span class="residence-inline-index">03</span><span>Man-made lagoon</span></figcaption>
+</figure>
+</div>
+</div>
+</div></div></div></div></section><section class="page-x section-y bg-background" id="main-floor"><div class="mx-auto max-w-7xl"><div class="mb-16 flex flex-col gap-10 md:mb-24 md:flex-row md:items-end md:justify-between"><div class="reveal max-w-2xl" style="transition-delay:0ms"><span class="eyebrow">04 — Main Floor</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">Designed for<br/><span class="italic text-gold">indoor–outdoor living.</span></h2></div></div><div class="main-floor-layout">
+<div class="reveal main-floor-gallery" style="transition-delay:0ms">
+<figure class="main-floor-card main-floor-card--featured">
+<div class="main-floor-image"><img alt="Deck at The Lagoons" loading="lazy" src="assets/custom/main-floor-deck.jpg"/></div>
+<figcaption><span class="main-floor-index">01</span><span>Deck</span></figcaption>
+</figure>
+<div class="main-floor-support-grid">
+<figure class="main-floor-card">
+<div class="main-floor-image"><img alt="Living zone at The Lagoons" loading="lazy" src="assets/custom/main-floor-living-zone.jpg"/></div>
+<figcaption><span class="main-floor-index">02</span><span>Living Zone</span></figcaption>
+</figure>
+<figure class="main-floor-card">
+<div class="main-floor-image"><img alt="Dining zone at The Lagoons" loading="lazy" src="assets/custom/main-floor-dining-zone.jpg"/></div>
+<figcaption><span class="main-floor-index">03</span><span>Dining Zone</span></figcaption>
+</figure>
+<figure class="main-floor-card">
+<div class="main-floor-image"><img alt="Master bedroom at The Lagoons" loading="lazy" src="assets/custom/main-floor-master-bedroom.jpg"/></div>
+<figcaption><span class="main-floor-index">04</span><span>Master Bedroom</span></figcaption>
+</figure>
+<figure class="main-floor-card">
+<div class="main-floor-image"><img alt="Bathroom at The Lagoons" loading="lazy" src="assets/custom/main-floor-bathroom.jpg"/></div>
+<figcaption><span class="main-floor-index">05</span><span>Bathroom</span></figcaption>
+</figure>
+</div>
+</div>
+<div class="reveal main-floor-details" style="transition-delay:140ms">
+<h3 class="font-headline text-4xl italic">Main Floor</h3>
+<ol class="mt-10 divide-y divide-hairline border-y border-hairline">
+<li class="flex items-baseline gap-6 py-4"><span class="font-label-caps text-gold">01</span><span class="font-body-md">Deck</span></li>
+<li class="flex items-baseline gap-6 py-4"><span class="font-label-caps text-gold">02</span><span class="font-body-md">Living Zone</span></li>
+<li class="flex items-baseline gap-6 py-4"><span class="font-label-caps text-gold">03</span><span class="font-body-md">Dining Zone</span></li>
+<li class="flex items-baseline gap-6 py-4"><span class="font-label-caps text-gold">04</span><span class="font-body-md">Master Bedroom</span></li>
+<li class="flex items-baseline gap-6 py-4"><span class="font-label-caps text-gold">05</span><span class="font-body-md">Bathroom</span></li>
+</ol>
+</div>
+</div></div></section><section class="page-x section-y bg-sand" id="rooftop"><div class="mx-auto max-w-7xl"><div class="grid grid-cols-1 items-center gap-12 md:grid-cols-12 md:gap-16"><div class="reveal md:col-span-5" style="transition-delay:0ms"><span class="eyebrow">05 — Rooftop</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">Above<br/><span class="italic text-gold">the lagoon.</span></h2><p class="font-body-md mt-9 text-muted-foreground">The supplied rooftop plan identifies a breakfast bar, pool, solarium and great area — extending the residence upward into a private open-air setting.</p></div><div class="reveal md:col-span-7" style="transition-delay:140ms"><figure class="img-luxe m-0 h-[26rem] md:h-[38rem]"><img alt="Private rooftop at The Lagoons" loading="lazy" src="assets/__l5e/assets-v1/e962d6bd-728a-4116-ad94-3bf00276eba2/rooftop.jpg"/></figure></div></div><div class="mt-6 grid grid-cols-2 gap-4 md:mt-10 md:grid-cols-4 md:gap-6"><div class="reveal" style="transition-delay:0ms"><figure class="img-luxe m-0 h-[11rem] md:h-[18rem]"><img alt="Private rooftop terrace with plunge pool and outdoor bar" loading="lazy" src="assets/custom/rooftop-thumbnail-terrace.jpg"/></figure></div><div class="reveal" style="transition-delay:90ms"><figure class="img-luxe m-0 h-[11rem] md:h-[18rem]"><img alt="Pool deck" loading="lazy" src="assets/__l5e/assets-v1/4476afbf-93d0-4175-b9a9-28149bd41183/pool-deck.jpg"/></figure></div><div class="reveal" style="transition-delay:180ms"><figure class="img-luxe m-0 h-[11rem] md:h-[18rem]"><img alt="Residence lounge" loading="lazy" src="assets/__l5e/assets-v1/73f56ae8-3bf3-4a9f-837c-22ee0d967e87/interior-lounge.jpg"/></figure></div><div class="reveal" style="transition-delay:270ms"><figure class="img-luxe m-0 h-[11rem] md:h-[18rem]"><img alt="Interior detail" loading="lazy" src="assets/__l5e/assets-v1/d0ddcde8-5204-449a-afb4-580de15919cb/interior-detail.jpg"/></figure></div></div></div></section><section class="page-x section-y bg-deep text-ivory" id="underwater"><div class="mx-auto max-w-7xl"><div class="grid grid-cols-1 items-end gap-12 md:grid-cols-12 md:gap-16"><div class="reveal md:col-span-5" style="transition-delay:0ms"><span class="eyebrow text-gold-soft">06 — Underwater</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">Below<br/><span class="italic">the waterline.</span></h2><p class="font-body-md mt-9 text-ivory/70">The brochure identifies an optional underwater studio / basement configuration for selected units. This is a defining part of the project's floating-lagoon concept.</p></div><div class="reveal md:col-span-7" style="transition-delay:140ms"><figure class="img-luxe underwater-feature"><img alt="Optional underwater studio" loading="lazy" src="assets/__l5e/assets-v1/9c24799a-4ef1-49e1-9e34-f40d3513e35e/underwater-studio.jpg"/></figure></div></div><div class="underwater-gallery">
+<div class="reveal" style="transition-delay:0ms"><figure class="img-luxe underwater-gallery-item"><img alt="Underwater interior bedroom view" loading="lazy" src="assets/custom/underwater-gallery-01.jpg"/></figure></div>
+<div class="reveal" style="transition-delay:60ms"><figure class="img-luxe underwater-gallery-item"><img alt="Underwater lounge and bar view" loading="lazy" src="assets/custom/underwater-gallery-02.jpg"/></figure></div>
+<div class="reveal" style="transition-delay:120ms"><figure class="img-luxe underwater-gallery-item"><img alt="Underwater living area and kitchenette" loading="lazy" src="assets/custom/underwater-gallery-03.jpg"/></figure></div>
+<div class="reveal" style="transition-delay:180ms"><figure class="img-luxe underwater-gallery-item"><img alt="Underwater lounge facing illuminated bar" loading="lazy" src="assets/custom/underwater-gallery-04.jpg"/></figure></div>
+<div class="reveal" style="transition-delay:240ms"><figure class="img-luxe underwater-gallery-item"><img alt="Underwater social area and bar counter" loading="lazy" src="assets/custom/underwater-gallery-05.jpg"/></figure></div>
+<div class="reveal" style="transition-delay:300ms"><figure class="img-luxe underwater-gallery-item"><img alt="Underwater kitchenette and staircase detail" loading="lazy" src="assets/custom/underwater-gallery-06.jpg"/></figure></div>
+</div></div></section><section class="page-x section-y bg-background"><div class="mx-auto max-w-7xl"><div class="mb-16 flex flex-col gap-10 md:mb-24 md:flex-row md:items-end md:justify-between"><div class="reveal max-w-2xl" style="transition-delay:0ms"><span class="eyebrow">07 — Configurations</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">One residence.<br/><span class="italic text-gold">Multiple possibilities.</span></h2></div></div><div class="grid grid-cols-1 gap-px bg-hairline md:grid-cols-4"><div class="reveal" style="transition-delay:0ms"><div class="h-full bg-background p-8 transition-colors duration-700 hover:bg-sand md:p-10"><p class="font-label-caps text-gold">01</p><h3 class="font-headline mt-6 text-3xl">One Bedroom</h3><p class="font-body-md mt-5 text-muted-foreground">Core one-bedroom residence model.</p></div></div><div class="reveal" style="transition-delay:110ms"><div class="h-full bg-background p-8 transition-colors duration-700 hover:bg-sand md:p-10"><p class="font-label-caps text-gold">02</p><h3 class="font-headline mt-6 text-3xl">Rooftop</h3><p class="font-body-md mt-5 text-muted-foreground">Optional private rooftop addition.</p></div></div><div class="reveal" style="transition-delay:220ms"><div class="h-full bg-background p-8 transition-colors duration-700 hover:bg-sand md:p-10"><p class="font-label-caps text-gold">03</p><h3 class="font-headline mt-6 text-3xl">Underwater Studio</h3><p class="font-body-md mt-5 text-muted-foreground">Optional underwater basement / studio.</p></div></div><div class="reveal" style="transition-delay:330ms"><div class="h-full bg-background p-8 transition-colors duration-700 hover:bg-sand md:p-10"><p class="font-label-caps text-gold">04</p><h3 class="font-headline mt-6 text-3xl">Rooftop + Underwater</h3><p class="font-body-md mt-5 text-muted-foreground">Combined configuration where available.</p></div></div></div></div></section><section class="page-x section-y bg-sand" id="masterplan"><div class="mx-auto max-w-7xl"><div class="mb-16 flex flex-col gap-10 md:mb-24 md:flex-row md:items-end md:justify-between"><div class="reveal max-w-2xl" style="transition-delay:0ms"><span class="eyebrow">08 — Masterplan</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">The Lagoons<br/><span class="italic text-gold">masterplan.</span></h2></div><div class="reveal max-w-md space-y-6" style="transition-delay:140ms"><p class="font-body-md text-muted-foreground">Use the supplied current site plan as the authoritative visual. Do not redraw or invent site elements.</p></div></div><div class="reveal" style="transition-delay:0ms"><div class="frame-luxe"><img alt="The Lagoons masterplan with lagoon, villas, restaurant, spa and hotel context" class="block h-auto w-full" loading="lazy" src="assets/custom/masterplan-updated.jpg"/></div></div><div class="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3"><div class="reveal" style="transition-delay:0ms"><div class="border-t border-hairline pt-6"><p class="font-label-caps text-gold">Phase 01</p><h3 class="font-headline mt-4 text-3xl">Adults Only</h3></div></div><div class="reveal" style="transition-delay:110ms"><div class="border-t border-hairline pt-6"><p class="font-label-caps text-gold">Phase 02</p><h3 class="font-headline mt-4 text-3xl">Adults Only</h3></div></div><div class="reveal" style="transition-delay:220ms"><div class="border-t border-hairline pt-6"><p class="font-label-caps text-gold">Phase 03</p><h3 class="font-headline mt-4 text-3xl">Family Friendly</h3></div></div></div></div></section><section class="page-x section-y bg-shell" id="gallery"><div class="mx-auto max-w-7xl"><div class="mb-16 flex flex-col gap-10 md:mb-24 md:flex-row md:items-end md:justify-between"><div class="reveal max-w-2xl" style="transition-delay:0ms"><span class="eyebrow">09 — Gallery</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">The Lagoons,<br/><span class="italic text-gold">through every angle.</span></h2></div><div class="reveal max-w-md space-y-6" style="transition-delay:140ms"><p class="font-body-md text-muted-foreground">Explore The Lagoons from every angle. Select any image to open a larger view and browse the full collection.</p></div></div>
+<div class="lagoons-editorial-grid">
+<div class="reveal lagoons-editorial-item lagoons-editorial-item--wide" style="transition-delay:0ms">
+<figure aria-label="Open large image: Floating residence" class="img-luxe lagoons-gallery-frame lagoons-gallery-frame--featured gallery-clickable" data-gallery-alt="Floating residence" data-gallery-src="assets/custom/experience-villa.jpg" role="button" tabindex="0">
+<img alt="Floating residence" loading="lazy" src="assets/custom/experience-villa.jpg"/>
+</figure>
+</div>
+<div class="reveal lagoons-editorial-item lagoons-editorial-item--narrow" style="transition-delay:110ms">
+<figure aria-label="Open large image: Residence interior" class="img-luxe lagoons-gallery-frame lagoons-gallery-frame--supporting gallery-clickable" data-gallery-alt="Residence interior" data-gallery-src="assets/custom/gallery-pool-woman.jpg" role="button" tabindex="0">
+<img alt="Residence interior" loading="lazy" src="assets/custom/gallery-pool-woman.jpg"/>
+</figure>
+</div>
+<div class="reveal lagoons-editorial-item lagoons-editorial-item--narrow" style="transition-delay:80ms">
+<figure aria-label="Open large image: Underwater studio" class="img-luxe lagoons-gallery-frame lagoons-gallery-frame--supporting gallery-clickable" data-gallery-alt="Underwater studio" data-gallery-src="assets/custom/gallery-overwater.jpg" role="button" tabindex="0">
+<img alt="Underwater studio" loading="lazy" src="assets/custom/gallery-overwater.jpg"/>
+</figure>
+</div>
+<div class="reveal lagoons-editorial-item lagoons-editorial-item--wide" style="transition-delay:170ms">
+<figure aria-label="Open large image: Rooftop" class="img-luxe lagoons-gallery-frame lagoons-gallery-frame--featured gallery-clickable" data-gallery-alt="Rooftop" data-gallery-src="assets/custom/gallery-dj.jpg" role="button" tabindex="0">
+<img alt="Rooftop" loading="lazy" src="assets/custom/gallery-dj.jpg"/>
+</figure>
+</div>
+</div>
+<div class="lagoons-thumb-grid">
+<div class="reveal lagoons-thumb-item" style="transition-delay:0ms">
+<figure aria-label="Open large image: Interior detail" class="img-luxe lagoons-gallery-frame lagoons-gallery-frame--thumb gallery-clickable" data-gallery-alt="Interior detail" data-gallery-src="assets/custom/gallery-beach-club.jpg" role="button" tabindex="0">
+<img alt="Interior detail" loading="lazy" src="assets/custom/gallery-beach-club.jpg"/>
+</figure>
+</div>
+<div class="reveal lagoons-thumb-item" style="transition-delay:90ms">
+<figure aria-label="Open large image: Interior lounge" class="img-luxe lagoons-gallery-frame lagoons-gallery-frame--thumb gallery-clickable" data-gallery-alt="Interior lounge" data-gallery-src="assets/custom/experience-night.jpg" role="button" tabindex="0">
+<img alt="Interior lounge" loading="lazy" src="assets/custom/experience-night.jpg"/>
+</figure>
+</div>
+<div class="reveal lagoons-thumb-item" style="transition-delay:180ms">
+<figure aria-label="Open large image: Pool deck" class="img-luxe lagoons-gallery-frame lagoons-gallery-frame--thumb gallery-clickable" data-gallery-alt="Pool deck" data-gallery-src="assets/custom/experience-pool-aerial.jpg" role="button" tabindex="0">
+<img alt="Pool deck" loading="lazy" src="assets/custom/experience-pool-aerial.jpg"/>
+</figure>
+</div>
+<div class="reveal lagoons-thumb-item" style="transition-delay:270ms">
+<figure aria-label="Open large image: Location" class="img-luxe lagoons-gallery-frame lagoons-gallery-frame--thumb gallery-clickable" data-gallery-alt="Location" data-gallery-src="assets/custom/experience-arrival.jpg" role="button" tabindex="0">
+<img alt="Location" loading="lazy" src="assets/custom/experience-arrival.jpg"/>
+</figure>
+</div>
+</div>
+<div class="gallery-added-grid"><div class="reveal gallery-added-card" style="transition-delay:0ms"><figure aria-label="Open large image: Resort restaurant interior" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Resort restaurant interior" data-gallery-src="assets/custom/gallery-new-01.jpg" role="button" tabindex="0"><img alt="Resort restaurant interior" loading="lazy" src="assets/custom/gallery-new-01.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:60ms"><figure aria-label="Open large image: Couple dining at the resort" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Couple dining at the resort" data-gallery-src="assets/custom/gallery-new-02.jpg" role="button" tabindex="0"><img alt="Couple dining at the resort" loading="lazy" src="assets/custom/gallery-new-02.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:120ms"><figure aria-label="Open large image: Resort dining detail" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Resort dining detail" data-gallery-src="assets/custom/gallery-new-03.jpg" role="button" tabindex="0"><img alt="Resort dining detail" loading="lazy" src="assets/custom/gallery-new-03.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:180ms"><figure aria-label="Open large image: Lagoon pool split-level view" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Lagoon pool split-level view" data-gallery-src="assets/custom/gallery-new-04.jpg" role="button" tabindex="0"><img alt="Lagoon pool split-level view" loading="lazy" src="assets/custom/gallery-new-04.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:0ms"><figure aria-label="Open large image: Lagoon residences and pool" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Lagoon residences and pool" data-gallery-src="assets/custom/gallery-new-05.jpg" role="button" tabindex="0"><img alt="Lagoon residences and pool" loading="lazy" src="assets/custom/gallery-new-05.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:60ms"><figure aria-label="Open large image: Aerial pool lounge" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Aerial pool lounge" data-gallery-src="assets/custom/gallery-new-06.jpg" role="button" tabindex="0"><img alt="Aerial pool lounge" loading="lazy" src="assets/custom/gallery-new-06.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:120ms"><figure aria-label="Open large image: Aerial floating residences" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Aerial floating residences" data-gallery-src="assets/custom/gallery-new-07.jpg" role="button" tabindex="0"><img alt="Aerial floating residences" loading="lazy" src="assets/custom/gallery-new-07.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:180ms"><figure aria-label="Open large image: Aerial lagoon resort" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Aerial lagoon resort" data-gallery-src="assets/custom/gallery-new-08.jpg" role="button" tabindex="0"><img alt="Aerial lagoon resort" loading="lazy" src="assets/custom/gallery-new-08.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:0ms"><figure aria-label="Open large image: Private lagoon-side terrace" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Private lagoon-side terrace" data-gallery-src="assets/custom/gallery-new-09.jpg" role="button" tabindex="0"><img alt="Private lagoon-side terrace" loading="lazy" src="assets/custom/gallery-new-09.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:60ms"><figure aria-label="Open large image: Aerial lagoon residence cluster" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Aerial lagoon residence cluster" data-gallery-src="assets/custom/gallery-new-10.jpg" role="button" tabindex="0"><img alt="Aerial lagoon residence cluster" loading="lazy" src="assets/custom/gallery-new-10.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:120ms"><figure aria-label="Open large image: Aerial circular pool lounge" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Aerial circular pool lounge" data-gallery-src="assets/custom/gallery-new-11.jpg" role="button" tabindex="0"><img alt="Aerial circular pool lounge" loading="lazy" src="assets/custom/gallery-new-11.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:180ms"><figure aria-label="Open large image: Floating residence close view" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Floating residence close view" data-gallery-src="assets/custom/gallery-new-12.jpg" role="button" tabindex="0"><img alt="Floating residence close view" loading="lazy" src="assets/custom/gallery-new-12.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:0ms"><figure aria-label="Open large image: Beach club lounge" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Beach club lounge" data-gallery-src="assets/custom/gallery-new-13.jpg" role="button" tabindex="0"><img alt="Beach club lounge" loading="lazy" src="assets/custom/gallery-new-13.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:60ms"><figure aria-label="Open large image: Resort restaurant" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Resort restaurant" data-gallery-src="assets/custom/gallery-new-14.jpg" role="button" tabindex="0"><img alt="Resort restaurant" loading="lazy" src="assets/custom/gallery-new-14.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:120ms"><figure aria-label="Open large image: Pool deck and lagoon" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Pool deck and lagoon" data-gallery-src="assets/custom/gallery-new-15.jpg" role="button" tabindex="0"><img alt="Pool deck and lagoon" loading="lazy" src="assets/custom/gallery-new-15.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:180ms"><figure aria-label="Open large image: Poolside bar" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Poolside bar" data-gallery-src="assets/custom/gallery-new-16.jpg" role="button" tabindex="0"><img alt="Poolside bar" loading="lazy" src="assets/custom/gallery-new-16.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:0ms"><figure aria-label="Open large image: Resort arrival by bicycle" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Resort arrival by bicycle" data-gallery-src="assets/custom/gallery-new-17.jpg" role="button" tabindex="0"><img alt="Resort arrival by bicycle" loading="lazy" src="assets/custom/gallery-new-17.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:60ms"><figure aria-label="Open large image: Poolside bar at night" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Poolside bar at night" data-gallery-src="assets/custom/gallery-new-18.jpg" role="button" tabindex="0"><img alt="Poolside bar at night" loading="lazy" src="assets/custom/gallery-new-18.jpg"/></figure></div><div class="reveal gallery-added-card" style="transition-delay:120ms"><figure aria-label="Open large image: Lagoon-side relaxation" class="img-luxe gallery-added-frame gallery-clickable" data-gallery-alt="Lagoon-side relaxation" data-gallery-src="assets/custom/gallery-new-19.jpg" role="button" tabindex="0"><img alt="Lagoon-side relaxation" loading="lazy" src="assets/custom/gallery-new-19.jpg"/></figure></div></div></div></section><section class="page-x section-y bg-sand" id="invest"><div class="mx-auto max-w-7xl"><div class="mb-16 flex flex-col gap-10 md:mb-24 md:flex-row md:items-end md:justify-between"><div class="reveal max-w-2xl" style="transition-delay:0ms"><span class="eyebrow">10 — Own / Invest</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">Live.<br/><span class="italic text-gold">Invest. Enjoy.</span></h2></div><div class="reveal max-w-md space-y-6" style="transition-delay:140ms"><p class="font-body-md text-muted-foreground">The supplied investment material presents full whole-home ownership and a “LIVE OR EARN” proposition. Current commercial terms must be confirmed before publication.</p></div></div><div class="grid grid-cols-1 gap-8 md:grid-cols-3"><div class="reveal" style="transition-delay:0ms"><div class="h-full border border-hairline bg-background/60 p-10 transition-shadow duration-700 hover:shadow-[var(--shadow-luxe)]"><p class="font-label-caps text-gold">One Bedroom Model</p><p class="font-headline mt-8 text-6xl">$429k</p><div class="mt-8 h-px w-full rule-gold"></div><p class="font-label-caps mt-6 text-muted-foreground">USD · Source brochure price</p></div></div><div class="reveal" style="transition-delay:120ms"><div class="h-full border border-hairline bg-background/60 p-10 transition-shadow duration-700 hover:shadow-[var(--shadow-luxe)]"><p class="font-label-caps text-gold">Rooftop</p><p class="font-headline mt-8 text-6xl">$159k</p><div class="mt-8 h-px w-full rule-gold"></div><p class="font-label-caps mt-6 text-muted-foreground">USD · Source brochure price</p></div></div><div class="reveal" style="transition-delay:240ms"><div class="h-full border border-hairline bg-background/60 p-10 transition-shadow duration-700 hover:shadow-[var(--shadow-luxe)]"><p class="font-label-caps text-gold">Underwater Studio</p><p class="font-headline mt-8 text-6xl">$259k</p><div class="mt-8 h-px w-full rule-gold"></div><p class="font-label-caps mt-6 text-muted-foreground">USD · Source brochure price</p></div></div></div><div class="reveal" style="transition-delay:0ms"><p class="font-label-caps mt-10 border-t border-hairline pt-8 leading-relaxed text-muted-foreground">IMPORTANT — The supplied price material is dated January 2024. Current pricing, availability and commercial terms: INFORMATION REQUIRED.</p></div><div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-4"><div class="reveal" style="transition-delay:0ms"><div class="border-t border-hairline pt-6"><p class="font-headline text-4xl text-gold">25%</p><p class="font-body-md mt-3 text-muted-foreground">Downpayment — source brochure term; current confirmation required.</p></div></div><div class="reveal" style="transition-delay:100ms"><div class="border-t border-hairline pt-6"><p class="font-headline text-4xl text-gold">Full</p><p class="font-body-md mt-3 text-muted-foreground">Whole Home Ownership</p></div></div><div class="reveal" style="transition-delay:200ms"><div class="border-t border-hairline pt-6"><p class="font-headline text-4xl text-gold">10%</p><p class="font-body-md mt-3 text-muted-foreground">Resort Credit — source brochure term; current confirmation required.</p></div></div><div class="reveal" style="transition-delay:300ms"><div class="border-t border-hairline pt-6"><p class="font-headline text-4xl text-gold">Available</p><p class="font-body-md mt-3 text-muted-foreground">Furniture package — source brochure term; current confirmation required.</p></div></div></div></div></section><section class="page-x section-y bg-background"><div class="mx-auto max-w-7xl"><div class="mb-16 flex flex-col gap-10 md:mb-24 md:flex-row md:items-end md:justify-between"><div class="reveal max-w-2xl" style="transition-delay:0ms"><span class="eyebrow">11 — Investment Information</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">The numbers,<br/><span class="italic text-gold">as supplied.</span></h2></div></div><div class="grid grid-cols-1 gap-10 md:grid-cols-3"><div class="reveal" style="transition-delay:0ms"><div class="border-t border-hairline pt-8"><p class="font-headline text-7xl">10%</p><p class="font-label-caps mt-5">Annual Rental Return</p></div></div><div class="reveal" style="transition-delay:120ms"><div class="border-t border-hairline pt-8"><p class="font-headline text-7xl">5%</p><p class="font-label-caps mt-5">Annual Targeted Growth</p></div></div><div class="reveal" style="transition-delay:240ms"><div class="border-t border-hairline pt-8"><p class="font-headline text-7xl">25%</p><p class="font-label-caps mt-5">Projected Annual Return</p></div></div></div><div class="reveal" style="transition-delay:0ms"><p class="font-body-md mt-12 max-w-3xl text-muted-foreground">These figures appear in the supplied brochure as investment projections. They are not presented here as guarantees. Current financial, rental, legal and ownership terms:<!-- --> <strong class="font-medium text-foreground">INFORMATION REQUIRED.</strong></p></div></div></section><section class="page-x section-y bg-sand"><div class="mx-auto max-w-7xl"><div class="grid grid-cols-1 items-center gap-12 md:grid-cols-12 md:gap-16"><div class="reveal md:col-span-5" style="transition-delay:0ms"><span class="eyebrow">12 — Location</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">Turks &amp;<br/><span class="italic text-gold">Caicos.</span></h2><p class="font-body-md mt-9 text-muted-foreground">The Lagoons is located on Blue Hills Road in Providenciales, Turks and Caicos Islands.</p><p class="font-label-caps mt-8 text-muted-foreground">Blue Hills Road · Providenciales · Turks and Caicos Islands</p></div><div class="reveal md:col-span-7" style="transition-delay:140ms"><figure class="img-luxe m-0 h-[26rem] md:h-[38rem]"><img alt="Map showing The Lagoons location in Providenciales, Turks and Caicos Islands" loading="lazy" src="assets/custom/location-blue-hills-providenciales.jpg"/></figure></div></div></div></section><section class="relative min-h-[88vh] overflow-hidden"><img alt="Lagoon residence deck and hammock at The Lagoons" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="assets/custom/final-gallery-lagoon-deck.jpg"/><div class="absolute inset-0 bg-ink/45"></div><div class="page-x relative z-10 flex min-h-[88vh] items-end pb-24"><div class="reveal max-w-4xl text-white" style="transition-delay:0ms"><p class="font-label-caps mb-7 text-gold-soft">13 — Final Gallery</p><h2 class="font-headline text-6xl md:text-[7.5rem]">Come float<br/><span class="italic">with us.</span></h2><p class="font-body-md mt-9 max-w-xl text-white/80">The Lagoons · Turks &amp; Caicos</p><div class="mt-12 flex flex-wrap gap-10"><a class="font-label-caps link-underline" href="#contact">Request Information</a><a class="font-label-caps link-underline text-white/80" href="#residence">Explore Residences</a></div></div></div></section><section class="page-x section-y bg-background" id="contact"><div class="mx-auto max-w-7xl"><div class="mb-16 flex flex-col gap-10 md:mb-24 md:flex-row md:items-end md:justify-between"><div class="reveal max-w-2xl" style="transition-delay:0ms"><span class="eyebrow">14 — Contact</span><h2 class="font-headline mt-7 text-[2.6rem] md:text-[4.6rem]">Make The Lagoons<br/><span class="italic text-gold">yours.</span></h2></div><div class="reveal max-w-md space-y-6" style="transition-delay:140ms"><p class="font-body-md text-muted-foreground">Discover current availability, residence configurations and ownership opportunities.</p></div></div><div class="grid grid-cols-1 gap-16 md:grid-cols-12"><div class="reveal md:col-span-7" style="transition-delay:0ms"><form class="grid grid-cols-1 gap-x-10 gap-y-10 md:grid-cols-2"><label><span class="font-label-caps text-muted-foreground">First name</span><input class="font-body-md mt-4 w-full border-b border-hairline bg-transparent py-3 transition-colors duration-500 focus:border-gold focus:outline-none" type="text"/></label><label><span class="font-label-caps text-muted-foreground">Last name</span><input class="font-body-md mt-4 w-full border-b border-hairline bg-transparent py-3 transition-colors duration-500 focus:border-gold focus:outline-none" type="text"/></label><label><span class="font-label-caps text-muted-foreground">Email</span><input class="font-body-md mt-4 w-full border-b border-hairline bg-transparent py-3 transition-colors duration-500 focus:border-gold focus:outline-none" type="email"/></label><label><span class="font-label-caps text-muted-foreground">Phone</span><input class="font-body-md mt-4 w-full border-b border-hairline bg-transparent py-3 transition-colors duration-500 focus:border-gold focus:outline-none" type="tel"/></label><label><span class="font-label-caps text-muted-foreground">Country</span><input class="font-body-md mt-4 w-full border-b border-hairline bg-transparent py-3 transition-colors duration-500 focus:border-gold focus:outline-none" type="text"/></label><label><span class="font-label-caps text-muted-foreground">Interest</span><select class="font-body-md mt-4 w-full border-b border-hairline bg-transparent py-3 transition-colors duration-500 focus:border-gold focus:outline-none"><option>One bedroom residence</option><option>Rooftop</option><option>Underwater studio</option><option>Residence + rooftop + underwater</option><option>Investment</option><option>General information</option></select></label><label class="md:col-span-2"><span class="font-label-caps text-muted-foreground">Message</span><textarea class="font-body-md mt-4 w-full border-b border-hairline bg-transparent py-3 transition-colors duration-500 focus:border-gold focus:outline-none" rows="4"></textarea></label><div class="md:col-span-2"><button class="font-label-caps border border-foreground px-14 py-5 transition-colors duration-500 hover:bg-foreground hover:text-background" type="submit">Request information</button></div></form></div><div class="reveal md:col-span-5" style="transition-delay:140ms"><div class="border-t border-hairline pt-8"><p class="font-label-caps text-gold">Project information</p><dl class="mt-8 divide-y divide-hairline border-y border-hairline"><div class="flex justify-between gap-6 py-5"><dt class="font-label-caps">Email</dt><dd class="font-label-caps text-right text-muted-foreground">Information required</dd></div><div class="flex justify-between gap-6 py-5"><dt class="font-label-caps">Phone</dt><dd class="font-label-caps text-right text-muted-foreground">Information required</dd></div><div class="flex justify-between gap-6 py-5"><dt class="font-label-caps">Address</dt><dd class="font-label-caps text-right text-muted-foreground">Blue Hills Road, Providenciales, Turks and Caicos Islands</dd></div><div class="flex justify-between gap-6 py-5"><dt class="font-label-caps">Website</dt><dd class="font-label-caps text-right text-muted-foreground">Information required</dd></div></dl></div></div></div></div></section></main><div class="page-x bg-sand py-6 text-center"><span class="font-label-caps leading-relaxed text-muted-foreground">SOURCE NOTE — Pricing and investment figures shown here are from supplied project material dated January 2024. Verify current pricing, availability, returns and legal terms before publication.</span></div><footer class="bg-ink pb-14 pt-24 text-ivory"><div class="page-x mx-auto max-w-7xl"><div class="mb-20 grid grid-cols-1 gap-14 md:grid-cols-12"><div class="md:col-span-4"><img alt="The Lagoons" class="mb-8 h-16 w-auto" src="assets/__l5e/assets-v1/cb4eaa91-93cf-4765-bc6c-a85ce4e629b9/logo-white.png"/><p class="font-body-md max-w-xs text-ivory/65">Floating lagoon residences where architecture, water and tropical surroundings come together.</p></div><div class="md:col-span-3 md:col-start-6"><h5 class="font-label-caps mb-8 border-b border-ivory/15 pb-4">Navigate</h5><ul class="font-body-md space-y-3 text-ivory/65"><li><a class="transition-colors duration-500 hover:text-gold" href="#floating-lagoons">Floating Lagoon</a></li><li><a class="transition-colors duration-500 hover:text-gold" href="#experience">Experience</a></li><li><a class="transition-colors duration-500 hover:text-gold" href="#residence">Residences</a></li><li><a class="transition-colors duration-500 hover:text-gold" href="#rooftop">Rooftop</a></li><li><a class="transition-colors duration-500 hover:text-gold" href="#underwater">Underwater</a></li><li><a class="transition-colors duration-500 hover:text-gold" href="#masterplan">Masterplan</a></li><li><a class="transition-colors duration-500 hover:text-gold" href="#gallery">Gallery</a></li><li><a class="transition-colors duration-500 hover:text-gold" href="#invest">Own / Invest</a></li><li><a class="transition-colors duration-500 hover:text-gold" href="#contact">Contact</a></li></ul></div><div class="md:col-span-4 md:col-start-9"><h5 class="font-label-caps mb-8 border-b border-ivory/15 pb-4">Contact</h5><p class="font-label-caps text-ivory/65">Email — Information required</p><p class="font-label-caps mt-4 text-ivory/65">Phone — Information required</p><p class="font-label-caps mt-4 text-ivory/65">Address — Blue Hills Road, Providenciales, Turks and Caicos Islands</p><p class="font-label-caps mt-4 text-ivory/65">Social — Information required</p></div></div><div class="font-body-md flex flex-col items-center justify-between gap-4 border-t border-ivory/15 pt-8 text-sm text-ivory/60 md:flex-row"><div>© 2026 The Lagoons. All rights reserved.</div><div class="signature text-2xl text-gold">Living on the lagoon</div></div></div></footer></div>
+<script>
+  (function(){
+    function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn)}
+    ready(function(){
+      var els=[].slice.call(document.querySelectorAll('.reveal'));
+      function show(el){el.classList.add('reveal-in')}
+      if('IntersectionObserver' in window){
+        var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target)}})},{threshold:0.12});
+        els.forEach(function(el){io.observe(el)});
+      } else { els.forEach(show) }
+      var menu=document.querySelector('[aria-label="Menu"]');
+      var close=document.querySelector('[aria-label="Close menu"]');
+      var panel=close?close.closest('div.fixed'):null;
+      function open(){if(!panel)return;panel.classList.remove('opacity-0','pointer-events-none');panel.classList.add('opacity-100');document.body.style.overflow='hidden'}
+      function shut(){if(!panel)return;panel.classList.add('opacity-0','pointer-events-none');panel.classList.remove('opacity-100');document.body.style.overflow=''}
+      if(menu)menu.addEventListener('click',open);
+      if(close)close.addEventListener('click',shut);
+      if(panel)panel.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',shut)});
+      document.addEventListener('keydown',function(e){if(e.key==='Escape')shut()});
+      document.querySelectorAll('video').forEach(function(v){v.muted=true;v.loop=true;v.play&&v.play().catch(function(){})});
+    });
+  })();
+  </script>
+<div aria-hidden="true" aria-label="Image viewer" aria-modal="true" class="gallery-lightbox" id="gallery-lightbox" role="dialog">
+<button aria-label="Close image viewer" class="gallery-lightbox__close" type="button">×</button>
+<button aria-label="Previous image" class="gallery-lightbox__nav gallery-lightbox__nav--prev" type="button">‹</button>
+<div class="gallery-lightbox__stage">
+<img alt="" class="gallery-lightbox__image" src=""/>
+<div class="gallery-lightbox__caption"></div>
+</div>
+<button aria-label="Next image" class="gallery-lightbox__nav gallery-lightbox__nav--next" type="button">›</button>
+</div><script id="gallery-lightbox-script-v8">
+(function () {
+  const gallery = document.getElementById('gallery');
+  const lightbox = document.getElementById('gallery-lightbox');
+  if (!gallery || !lightbox) return;
+
+  const items = Array.from(gallery.querySelectorAll('[data-gallery-src]'));
+  const image = lightbox.querySelector('.gallery-lightbox__image');
+  const caption = lightbox.querySelector('.gallery-lightbox__caption');
+  const closeBtn = lightbox.querySelector('.gallery-lightbox__close');
+  const prevBtn = lightbox.querySelector('.gallery-lightbox__nav--prev');
+  const nextBtn = lightbox.querySelector('.gallery-lightbox__nav--next');
+  let current = 0;
+  let previousFocus = null;
+
+  function render(index) {
+    current = (index + items.length) % items.length;
+    const item = items[current];
+    image.src = item.dataset.gallerySrc;
+    image.alt = item.dataset.galleryAlt || 'Gallery image';
+    caption.textContent = item.dataset.galleryAlt || '';
+  }
+
+  function open(index) {
+    previousFocus = document.activeElement;
+    render(index);
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function close() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    image.src = '';
+    if (previousFocus && typeof previousFocus.focus === 'function') previousFocus.focus();
+  }
+
+  items.forEach((item, index) => {
+    item.addEventListener('click', () => open(index));
+    item.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        open(index);
+      }
+    });
+  });
+
+  closeBtn.addEventListener('click', close);
+  prevBtn.addEventListener('click', () => render(current - 1));
+  nextBtn.addEventListener('click', () => render(current + 1));
+
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) close();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (!lightbox.classList.contains('is-open')) return;
+    if (event.key === 'Escape') close();
+    if (event.key === 'ArrowLeft') render(current - 1);
+    if (event.key === 'ArrowRight') render(current + 1);
+  });
+})();
+</script></body></html>
